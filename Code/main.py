@@ -127,31 +127,8 @@ class Graphe:
 
 #########################################################################################################
 
-# Graph
+
                  
-graph_elements = { 
-   "1" : ["2","3"],
-   "2" : ["1","3"],
-   "3" : ["1","2","4"],
-   "4" : ["3"]
-
-  
-}
-
-
-# Instanciation
-g = Graphe(graph_elements)
-
-#Tests
-
-print("Degrees of nodes :",g.calculate_degrees())
-o=g.degeneracy_ordering()
-
-print("order of degeneracy is ",o)
-g.degeneracy()
-
-G0 = g.find_Gj(0)
-print(G0.gdict)
 
 
 
